@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Filter from './Filter'
 
 const App = () => {
   const [temperatureValue, setTemperatureValue] = useState(10)
@@ -20,15 +21,18 @@ const App = () => {
     setTemperatureValue(newTemperature)
   }
   return (
-    <div className='app-container'>
-      <div className="temperature-display-container">
-        <div className={`temperature-display ${temperatureColor}`}>{temperatureValue}°C</div>
+    <>
+      <div className='app-container'>
+        <div className="temperature-display-container">
+          <div className={`temperature-display ${temperatureColor}`}>{temperatureValue}°C</div>
+        </div>
+        <div className="button-container">
+          <button onClick={() => increaseTemperature()}>+</button>
+          <button onClick={() => decreaseTemperature()}>-</button>
+        </div>
       </div>
-      <div className="button-container">
-        <button onClick={() => increaseTemperature()}>+</button>
-        <button onClick={() => decreaseTemperature()}>-</button>
-      </div>
-    </div>
+      <Filter />
+    </>
   )
 }
 export default App;
