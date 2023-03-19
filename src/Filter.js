@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import JSONDATA from './MOCK_DATA.json'
 import Header from './Header'
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 export default function Filter() {
   const [searchTerm, setSearchTerm] = useState('')
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Header from './Header'
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import {  Container } from 'react-bootstrap'
 
 export default function Temp_control() {
    const [temperatureValue, setTemperatureValue] = useState(10)
