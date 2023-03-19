@@ -12,6 +12,7 @@ export default function Header() {
                   <Nav.Link as={Link} to='/Temp_control'>Temperature Control</Nav.Link><br />
                   <Nav.Link as={Link} to='/filter'>Filter Search</Nav.Link>
                   <Nav.Link as={Link} to='/form'>Basic Form</Nav.Link>
+                  <Nav.Link as={Link} to='/quiz'>Quiz app</Nav.Link>
                </Nav>
             </Container>
          </Navbar>
