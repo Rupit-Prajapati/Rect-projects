@@ -23,24 +23,24 @@ export default function Form() {
    return (
       <>
          <Header />
-         <div class="form-container">
-            <form class="register-form" onSubmit={handleSubmit}>
+         <div className="form-container">
+            <form className="register-form" onSubmit={handleSubmit}>
 
-               {submitted && valid ? <div class="success-message">Success! Thank you for registering</div> : null}
+               {submitted && valid ? <div className="success-message">Success! Thank you for registering</div> : null}
 
-               <input id="first-name" value={values.firstName} class="form-field" type="text" placeholder="First Name" name="firstName" onChange={handleFirstNameInputChange} />
+               <input id="first-name" value={values.firstName} className="form-field" type="text" placeholder="First Name" name="firstName" onChange={handleFirstNameInputChange} />
 
                {submitted && !values.firstName ? <span id="first-name-error">Please enter a first name</span> : null}
 
-               <input id="last-name" value={values.lastName} class="form-field" type="text" placeholder="Last Name" name="lastName" onChange={handleLastNameInputChange} />
+               <input id="last-name" value={values.lastName} className="form-field" type="text" placeholder="Last Name" name="lastName" onChange={handleLastNameInputChange} />
 
                {submitted && !values.lastName ? <span id="last-name-error">Please enter a last name</span> : null}
 
-               <input id="email" value={values.email} class="form-field" type="text" placeholder="Email" name="email" onChange={handleemailInputChange} />
+               <input id="email" value={values.email} className="form-field" type="text" placeholder="Email" name="email" onChange={handleemailInputChange} />
 
                {submitted && !values.email ? <span id="email-error">Please enter an email address</span> : null}
 
-               <button class="form-field" type="submit" >Register
+               <button className="form-field" type="submit" >Register
                </button>
             </form>
          </div>

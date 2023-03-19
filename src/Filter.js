@@ -8,7 +8,6 @@ export default function Filter() {
     <>
       <Header />
       <Container>
-
         <input type="text" placeholder='Search...' onChange={(e) => setSearchTerm(e.target.value)} />
         {
           JSONDATA.filter((val) => {
