@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
 #root {
   width: 100%;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -95,7 +96,6 @@ p {
   width: 360px;
   max-width: 100%;
   background-color: white;
-  margin: auto;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   padding: 10px;
 }
@@ -215,7 +215,7 @@ body {
   justify-content: space-between;
 }
 
-button {
+.register-form button {
   width: 100%;
   font-size: 16px;
   color: #ffffff;

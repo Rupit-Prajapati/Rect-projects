@@ -4,10 +4,13 @@ import Form from './Form';
 import Header from './Header';
 import Quiz from './Quiz';
 import TempControl from './Temp_control';
+import Navbar from './components/Navbar/Navbar';
+import { Nav } from 'react-bootstrap';
 
 const App = () => {
   return (
     <>
+      {/* <Navbar /> */}
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Header />} />

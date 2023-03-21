@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Container } from 'react-bootstrap'
 import Header from './Header'
 
 export default function Form() {
@@ -23,27 +24,29 @@ export default function Form() {
    return (
       <>
          <Header />
-         <div className="form-container">
-            <form className="register-form" onSubmit={handleSubmit}>
+         <Container>
+            <div className="form-container">
+               <form className="register-form" onSubmit={handleSubmit}>
 
-               {submitted && valid ? <div className="success-message">Success! Thank you for registering</div> : null}
+                  {submitted && valid ? <div className="success-message">Success! Thank you for registering</div> : null}
 
-               <input id="first-name" value={values.firstName} className="form-field" type="text" placeholder="First Name" name="firstName" onChange={handleFirstNameInputChange} />
+                  <input id="first-name" value={values.firstName} className="form-field" type="text" placeholder="First Name" name="firstName" onChange={handleFirstNameInputChange} />
 
-               {submitted && !values.firstName ? <span id="first-name-error">Please enter a first name</span> : null}
+                  {submitted && !values.firstName ? <span id="first-name-error">Please enter a first name</span> : null}
 
-               <input id="last-name" value={values.lastName} className="form-field" type="text" placeholder="Last Name" name="lastName" onChange={handleLastNameInputChange} />
+                  <input id="last-name" value={values.lastName} className="form-field" type="text" placeholder="Last Name" name="lastName" onChange={handleLastNameInputChange} />
 
-               {submitted && !values.lastName ? <span id="last-name-error">Please enter a last name</span> : null}
+                  {submitted && !values.lastName ? <span id="last-name-error">Please enter a last name</span> : null}
 
-               <input id="email" value={values.email} className="form-field" type="text" placeholder="Email" name="email" onChange={handleemailInputChange} />
+                  <input id="email" value={values.email} className="form-field" type="text" placeholder="Email" name="email" onChange={handleemailInputChange} />
 
-               {submitted && !values.email ? <span id="email-error">Please enter an email address</span> : null}
+                  {submitted && !values.email ? <span id="email-error">Please enter an email address</span> : null}
 
-               <button className="form-field" type="submit" >Register
-               </button>
-            </form>
-         </div>
+                  <button className="form-field" type="submit" >Register
+                  </button>
+               </form>
+            </div>
+         </Container>
       </>
    )
 }
